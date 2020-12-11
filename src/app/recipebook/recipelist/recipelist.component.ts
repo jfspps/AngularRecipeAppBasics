@@ -5,5 +5,6 @@ import { Component } from "@angular/core";
     templateUrl: './recipelist.component.html'
 })
 export class RecipeList {
+    recipes = [];   // see recipe.model.ts for definition
 
 }
