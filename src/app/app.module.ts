@@ -8,15 +8,20 @@ import { RecipeitemComponent } from './recipebook/recipeitem/recipeitem.componen
 import { RecipedetailComponent } from './recipebook/recipedetail/recipedetail.component';
 import { ShoppingListComponent } from './shoppinglist/shoppinglist/shoppinglist.component';
 import { RecipeList } from './recipebook/recipelist/recipelist.component';
+import { HeaderComponent } from './header/header.component';
+import { RecipeBook } from './recipebook/recipe.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+    HeaderComponent,
     ShoppingListComponent,
     ShoppinglisteditComponent,
+    RecipeBook,
     RecipeList,
     RecipeitemComponent,
-    RecipedetailComponent
+    RecipedetailComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
