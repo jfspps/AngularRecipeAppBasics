@@ -4,6 +4,6 @@ import { Component } from "@angular/core";
     selector: 'app-shoppinglist',
     templateUrl: './shoppinglist.component.html'
 })
-export class ShoppingListComponent {
+export class ShoppingListComponent{
 
 }
