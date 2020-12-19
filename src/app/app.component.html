@@ -2,11 +2,11 @@
   <div class="row">
     <div class="row">
       <div class="h1">Angular Recipe demo</div>
-      <app-header></app-header>
+      <app-header (featureSelected)="onNavigate($event)"></app-header>
       <hr>
-      <app-recipebook></app-recipebook>
+      <app-recipebook *ngIf="loadedFeature === 'recipe'"></app-recipebook>
       <hr>      
-      <app-shoppinglist></app-shoppinglist>
+      <app-shoppinglist *ngIf="loadedFeature != 'recipe'"></app-shoppinglist>
       <hr>
     </div>
   </div>
