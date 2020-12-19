@@ -1,8 +1,17 @@
 <div class="row"></div>
 <div class="col-md-5">
-  <app-recipelist></app-recipelist>
+  <!-- recipeSelection is passed to recipeList and available to recipeDetail (grandparent and granduncle/aunt) -->
+  <app-recipelist (recipeSelection)="selectedRecipe = $event"></app-recipelist>
 </div>
 
 <div class="col-md-7">
-  <app-recipedetail></app-recipedetail>
+  <app-recipedetail 
+  *ngIf="selectedRecipe; else infoText"
+  [recipe]="selectedRecipe"
+  ></app-recipedetail>
+
+  <ng-template #infoText>
+    <p>Please select a recipe</p>
+  </ng-template>
+  
 </div>
