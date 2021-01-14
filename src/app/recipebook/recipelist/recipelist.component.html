@@ -8,7 +8,6 @@
     <!-- Goal is to send recipe data from recipeItem to recipeList and then to recipeBook (and then recipeDetail), hence between grandchild and granduncle/aunt -->
     <div class="col-xs-12">
         <app-recipeitem *ngFor="let recipeFromList of recipes" 
-        [recipe]="recipeFromList"
-        (recipeSelected)="onRecipeSelected(recipeFromList)"></app-recipeitem>
+        [recipe]="recipeFromList"></app-recipeitem>
     </div>
 </div>

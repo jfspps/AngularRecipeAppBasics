@@ -1,6 +1,10 @@
+import { EventEmitter } from "@angular/core";
 import { Recipe } from "./recipe.model";
 
 export class RecipeService{
+
+    // assigned by emit(recipeName) from a given component (i.e. recipeItem)
+    selectedRecipe = new EventEmitter<Recipe>();
 
     private recipes: Recipe[] = [
         new Recipe('test recipe name', 'some description', 
