@@ -4,7 +4,7 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ShoppingListComponent } from './shoppinglist/shoppinglist.component'
-import { RecipeitemComponent } from './recipebook/recipeitem/recipeitem.component';
+import { RecipeitemComponent } from './recipebook/recipelist/recipeitem/recipeitem.component';
 import { RecipedetailComponent } from './recipebook/recipedetail/recipedetail.component';
 import { RecipeList } from './recipebook/recipelist/recipelist.component';
 import { HeaderComponent } from './header/header.component';
