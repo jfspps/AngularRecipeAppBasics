@@ -17,9 +17,10 @@ export class ShoppingListEditComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  onAddItem(){
+  onAddItem(){    
     // this adds to a copy of ingredients array
+    // note the unary plus + converts the string to a number (there are other conversion methods)
     this.shoppingListService.addIngredient(new Ingredient(
-      this.ingredientName.nativeElement.value, this.ingredientAmount.nativeElement.value));
+      this.ingredientName.nativeElement.value, +this.ingredientAmount.nativeElement.value));
   }
 }
