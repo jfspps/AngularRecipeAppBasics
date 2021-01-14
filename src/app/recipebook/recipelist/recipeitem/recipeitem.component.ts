@@ -7,7 +7,7 @@ import { RecipeService } from '../../recipes.service';
   templateUrl: './recipeitem.component.html',
   styleUrls: ['./recipeitem.component.css']
 })
-export class RecipeitemComponent implements OnInit {
+export class RecipeItemComponent implements OnInit {
 
   @Input() recipe: Recipe;
 
