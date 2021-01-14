@@ -18,6 +18,7 @@ export class ShoppingListEditComponent implements OnInit {
   }
 
   onAddItem(){
+    // this adds to a copy of ingredients array
     this.shoppingListService.addIngredient(new Ingredient(
       this.ingredientName.nativeElement.value, this.ingredientAmount.nativeElement.value));
   }

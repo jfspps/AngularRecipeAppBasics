@@ -12,6 +12,13 @@ export class ShoppingListComponent implements OnInit{
     constructor(private shoppinglistService: ShoppingListService){};
 
     ngOnInit() {
+        //get the ingredients from the service then replace with subsequent, changed arrays
         this.ingredients = this.shoppinglistService.getIngredients();
+
+        this.shoppinglistService.ingredientsChange.subscribe(
+            (ingredientsEdit: Ingredient[]) => {
+                this.ingredients = ingredientsEdit;
+            }
+        )
     }
 }
