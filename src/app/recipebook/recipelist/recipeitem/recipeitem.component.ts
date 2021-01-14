@@ -19,6 +19,7 @@ export class RecipeitemComponent implements OnInit {
   onSelected(){
     // on click, emit the user selected recipe to RecipeServices' selectRecipe
     // (this is ultimately communicated to recipeBook directly)
+    // note how intermediate databinding calls are no longer required
     this.recipeService.selectedRecipe.emit(this.recipe);
   }
 }
